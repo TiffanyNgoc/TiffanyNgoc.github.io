@@ -177,15 +177,15 @@ nav {
 }
 
 .portfolio__card:nth-child(1)::after {
-  content: "Portraits";
+  content: "Cars";
 }
 
 .portfolio__card:nth-child(2)::after {
-  content: "Weddings";
+  content: "Animals";
 }
 
 .portfolio__card:nth-child(3)::after {
-  content: "Fashions";
+  content: "Landscape";
 }
 
 .portfolio__content {
