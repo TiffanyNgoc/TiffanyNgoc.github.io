@@ -564,3 +564,21 @@ nav {
     gap: 2rem;
   }
 }
+
+/* gallery.html code */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--header-font);
+}
+
+input {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
