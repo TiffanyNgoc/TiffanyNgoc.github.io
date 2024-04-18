@@ -12,6 +12,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="lightbox.css">
     <title>Photography Website</title>
   </head>
   <body>
@@ -51,7 +52,7 @@
     <input type="radio" name="Photos" id="check4">
 
     <div class="container">
-        <h2 class="section__header">~ GALLERY ~</h2>
+        <h1>~ GALLERY ~</h1>
         <div class="top-content">
             <h3>Photo Gallery</h3>
             <label for="check1">All Photos</label>
@@ -59,13 +60,17 @@
             <label for="check3">Animal Photos</label>
             <label for="check4">Landscape Photos</label>
         </div>
-
+<div class="photo__grid">
         <div class="photo-gallery">
             <div class="pic place">
-                <img src="assets/image-1.jpg" alt="gallery">
+                <a href="assets/image-1.jpg" data-lightbox="models" data-title="Caption1">
+                    <img src="assets/image-1.jpg" alt="gallery" />
+                </a>
             </div>
             <div class="pic car">
-                <img src="assets/image-2.jpg" alt="gallery">
+                <a href="assets/image-2.jpg" data-lightbox="models" data-title="Caption1">
+                    <img src="assets/image-2.jpg" alt="gallery" />
+                </a>
             </div>
             <div class="pic animal">
                 <img src="assets/image-3.jpg" alt="gallery">
@@ -85,18 +90,19 @@
             <div class="pic car">
                 <img src="assets/image-8.jpg" alt="gallery">
             </div>
-            <div class="pic Animal">
-                <img src="assets/service.jpg" alt="gallery">
-            </div>
         </div>
     </div>
+</div>
 
     </body>
 
     <section class="section__container gallery__container" id="gallery">
       <h2 class="section__header">~ GALLERY ~</h2>
       <div class="gallery__grid">
-        <img src="assets/image-1.jpg" alt="gallery" />
+        <a href="assets/image-1.jpg" data-lightbox="models" data-title="Caption1">
+            <img src="assets/image-1.jpg" alt="gallery" />
+        </a>
+
         <img src="assets/image-2.jpg" alt="gallery" />
         <img src="assets/image-3.jpg" alt="gallery" />
         <img src="assets/image-4.jpg" alt="gallery" />
@@ -150,5 +156,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+    <script src="lightbox-plus-jquery.js"></script>
   </body>
 </html>
