@@ -11,8 +11,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="gallery.css" />
     <link rel="stylesheet" href="lightbox.css">
+
+    <!-- magnific-popup css cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
     <title>Photography Website</title>
   </head>
   <body>
@@ -44,59 +48,68 @@
       </nav>
     </header>
 
-    <body>
+    <div class="gallery">
 
-    <input type="radio" name="Photos" id="check1" checked>
-    <input type="radio" name="Photos" id="check2">
-    <input type="radio" name="Photos" id="check3">
-    <input type="radio" name="Photos" id="check4">
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">all</li>
+            <li class="buttons" data-filter="ice-cream">ice-cream</li>
+            <li class="buttons" data-filter="chocolate">chocolate</li>
+            <li class="buttons" data-filter="cake">cake</li>
+            <li class="buttons" data-filter="juice">juice</li>
+            <li class="buttons" data-filter="sandwich">sandwich</li>
+        </ul>
 
-    <div class="container">
-        <h1>~ GALLERY ~</h1>
-        <div class="top-content">
-            <h3>Photo Gallery</h3>
-            <label for="check1">All Photos</label>
-            <label for="check2">Car Photos</label>
-            <label for="check3">Animal Photos</label>
-            <label for="check4">Landscape Photos</label>
-        </div>
-<div class="photo__grid">
-        <div class="photo-gallery">
-            <div class="pic place">
-                <a href="assets/image-1.jpg" data-lightbox="models" data-title="Caption1">
-                    <img src="assets/image-1.jpg" alt="gallery" />
-                </a>
-            </div>
-            <div class="pic car">
-                <a href="assets/image-2.jpg" data-lightbox="models" data-title="Caption2">
-                    <img src="assets/image-2.jpg" alt="gallery" />
-                </a>
-            </div>
-            <div class="pic animal">
-                <img src="assets/image-3.jpg" alt="gallery">
-            </div>
-            <div class="pic place">
-                <img src="assets/image-4.jpg" alt="gallery">
-            </div>
-            <div class="pic car">
-                <img src="assets/image-5.jpg" alt="gallery">
-            </div>
-            <div class="pic Animal">
-                <img src="assets/image-6.jpg" alt="gallery">
-            </div>
-            <div class="pic place">
-                <img src="assets/image-7.jpg" alt="gallery">
-            </div>
-            <div class="pic car">
-                <img src="assets/image-8.jpg" alt="gallery">
-            </div>
+        <div class="image-container">
+            <a href="sudoPics/ice-cream1.jpeg" class="image ice-cream" data-lightbox="models" data-title="Caption1">
+                <img src="sudoPics/ice-cream1.jpeg" alt="gallery">
+            </a>
+            <a href="sudoPics/ice-cream2.jpeg" class="image ice-cream">
+                <img src="sudoPics/ice-cream2.jpeg" alt="">
+            </a>
+            <a href="sudoPics/ice-cream3.jpeg" class="image ice-cream">
+                <img src="sudoPics/ice-cream3.jpeg" alt="">
+            </a>
+            <a href="sudoPics/chocolate1.jpeg" class="image chocolate">
+                <img src="sudoPics/chocolate1.jpeg" alt="">
+            </a>
+            <a href="sudoPics/chocolate2.jpeg" class="image chocolate">
+                <img src="sudoPics/chocolate2.jpeg" alt="">
+            </a>
+            <a href="sudoPics/chocolate3.jpeg" class="image chocolate">
+                <img src="sudoPics/chocolate3.jpeg" alt="">
+            </a>
+            <a href="sudoPics/cake1.jpeg" class="image cake">
+                <img src="sudoPics/cake1.jpeg" alt="">
+            </a>
+            <a href="sudoPics/cake2.jpeg" class="image cake">
+                <img src="sudoPics/cake2.jpeg" alt="">
+            </a>
+            <a href="sudoPics/cake3.jpeg" class="image cake">
+                <img src="sudoPics/cake3.jpeg" alt="">
+            </a>
+            <a href="sudoPics/juice1.jpeg" class="image juice">
+                <img src="sudoPics/juice1.jpeg" alt="">
+            </a>
+            <a href="sudoPics/juice2.jpeg" class="image juice">
+                <img src="sudoPics/juice2.jpeg" alt="">
+            </a>
+            <a href="sudoPics/juice3.jpeg" class="image juice">
+                <img src="sudoPics/juice3.jpeg" alt="">
+            </a>
+            <a href="sudoPics/sandwich1.jpeg" class="image sandwich">
+                <img src="sudoPics/sandwich1.jpeg" alt="">
+            </a>
+            <a href="sudoPics/sandwich2.jpeg" class="image sandwich">
+                <img src="sudoPics/sandwich2.jpeg" alt="">
+            </a>
+            <a href="sudoPics/sandwich3.jpeg" class="image sandwich">
+                <img src="sudoPics/sandwich3.jpeg" alt="">
+            </a>
+
         </div>
     </div>
-</div>
 
-    </body>
-
-    <section class="section__container gallery__container" id="gallery">
+    <!-- <section class="section__container gallery__container" id="gallery">
       <h2 class="section__header">~ GALLERY ~</h2>
       <div class="gallery__grid">
         <a href="assets/image-1.jpg" data-lightbox="models" data-title="Caption1">
@@ -116,7 +129,7 @@
           <button class="btn">VIEW GALLERY</button>
         </a>
       </div>
-    </section>
+    </section> -->
 
     <footer id="contact">
       <div class="section__container footer__container">
@@ -157,5 +170,45 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
     <script src="lightbox-plus-jquery.js"></script>
+
+    <!-- jquery cdn link -->
+    <script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>"></script>
+
+    <!-- magnific popup js cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+
+    $(document).ready(function(){
+
+        $('.buttons').click(function(){
+
+            $(this).addClass('active').siblings().removeClass('active');
+
+            var filter = $(this).attr('data-filter')
+
+            if (filter == 'all') {
+                $('.image ').show(400);
+            } else {
+                $('.image ').not('.'+filter).hide(200);
+                $('.image ').filter('.'+filter).show(200);
+            }
+
+        });
+
+        // $('.gallery').magnificPopup({
+
+        //     delegate:'a',
+        //     type:'image',
+        //     gallery:{
+        //         enabled:true
+        //     }
+        // });
+
+    });
+
+    </script>
+
+
   </body>
 </html>
