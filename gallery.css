@@ -47,7 +47,7 @@
 }
 
 .gallery .controls .buttons.active {
-    background: coral;
+    background: black;
     color: #fff;
 }
 
@@ -59,18 +59,19 @@
 }
 
 .gallery .image-container .image {
-    height: 250px;
-    width: 350px;
-    overflow: hidden;
-    border: 15px solid #fff;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-    margin: 20px;
+  height: 250px;
+  width: 350px;
+  border: 15px solid #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  margin: 20px;
+  position: relative; /* To control the positioning of nested img */
 }
 
-.gallery .image-container .image .img {
-    height: 100%;
+.gallery .image-container .image img {
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain; /* Ensures the image fits without cropping */
+    display: block; /* Removes bottom space/gap */
 }
 
 .gallery .image-container .image:hover img {
