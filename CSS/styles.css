@@ -361,6 +361,10 @@ nav {
   border: 1px solid var(--white);
 }
 
+.blog__content .btn:hover {
+  background-color: var(--text-light);
+}
+
 .instagram__container {
   overflow: hidden;
 }
