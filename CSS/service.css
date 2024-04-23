@@ -1,4 +1,11 @@
 /* Start of service section */
+.negotiable-prices-notice {
+  text-align: center;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #f8f8f8; /* Example background color */
+  font-weight: bold;
+}
 
 .service__packages {
     display: flex;
