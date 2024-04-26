@@ -205,6 +205,10 @@ a{
     overflow: hidden;
 }
 
+.post-title:hover {
+    color: grey;
+}
+
 .post-date{
     display: flex;
     font-size: 0.875rem;

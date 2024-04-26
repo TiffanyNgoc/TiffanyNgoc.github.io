@@ -220,6 +220,11 @@ header.shadow .logo {
   color: var(--second-color);
   font-size: 0.9rem;
 }
+
+.back-home:hover {
+  color: rgb(174, 174, 174);
+}
+
 .header-title {
   width: 90%;
   font-size: 2.6rem;
