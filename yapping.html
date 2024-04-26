@@ -1,50 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="CSS/styles.css" />
-    <link rel="stylesheet" href="CSS/lightbox.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Pham Photography</title>
-  </head>
-  <body>
-    <header class="header" id="home">
-      <nav>
-        <div class="nav__header">
-          <div class="nav__logo">
-            <a href="index.html">
-              <img src="assets/logo-white.png" alt="logo" />
-            </a>
-          </div>
-          <div class="nav__menu__btn" id="menu-btn">
-            <i class="ri-menu-line"></i>
-          </div>
-        </div>
-        <ul class="nav__links" id="nav-links">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT ME</a></li>
-          <li><a href="service.html">SERVICES</a></li>
-          <li class="nav__logo">
-            <a href="index.html">
-              <img src="assets/logo-white.png" alt="logo" />
-            </a>
-          </li>
-          <li><a href="gallery.html">GALLERY</a></li>
-          <li><a href="yapping.html">BLOG</a></li>
-          <li><a href="contact.html">CONTACT ME</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- Box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/blog.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
 
-    why r u here, tis page is not finished
+  <header class="header" id="home">
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="index.html">
+            <img src="assets/logo-white.png" alt="logo" />
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="service.html">SERVICES</a></li>
+        <li class="nav__logo">
+          <a href="index.html">
+            <img src="assets/logo-white.png" alt="logo" />
+          </a>
+        </li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="yapping.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT ME</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <section class="about container" id="about">
+        <div class="contentBx">
+            <h2 class="titleText">First Merced Cars & Coffee</h2>
+            <p class="title-text">
+              Check out my fresh take from the Merced Cars & Coffee meet! 
+              It was my first dive into car meet photography, and the experience 
+              was amazing. I was all about capturing the raw emotions and stories 
+              behind these machines and their proud owners. This post is packed 
+              with my favorite shots and the moments that made the day unforgettable. 
+              Dive in to see through my eyes – where every snapshot tells a part of the 
+              bigger story of car culture and community.
+            </p>
+            <a href="blogs/post-page.html" class="btn2">Read more</a>
+        </div>
+        <div class="imgBx">
+            <img src="assets/blog.jpg" alt="" class="fitBg">
+        </div>
+    </section>
+
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all">All</span>
+        <span class="filter-item" data-filter="car">Car</span>
+        <span class="filter-item" data-filter="food">Food</span>
+        <span class="filter-item" data-filter="news">News</span>
+    </div>
+    
+    <div class="post container">
+        <!-- Post 1 -->
+        <div class="post-box car">
+            <img src="assets/image-1.jpg" alt="" class="post-img">
+            <h2 class="category">Car</h2>
+            <a href="#" class="post-title">Title</a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
+            <div class="profile">
+                <img src="profile/SelfPic.JPG" alt="" class="profile-img">
+                <span class="profile-name">Tiffany Pham</span>
+            </div>
+        </div>
+        <!-- Post 2 -->
+        <div class="post-box food">
+            <img src="assets/image-2.jpg" alt="" class="post-img">
+            <h2 class="category">Food</h2>
+            <a href="#" class="post-title">Title</a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
+            <div class="profile">
+                <img src="profile/SelfPic.JPG" alt="" class="profile-img">
+                <span class="profile-name">Tiffany Pham</span>
+            </div>
+        </div>
+        <!-- Post 3 -->
+        <div class="post-box food">
+            <img src="assets/image-3.jpg" alt="" class="post-img">
+            <h2 class="category">Food</h2>
+            <a href="#" class="post-title">Title</a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
+            <div class="profile">
+                <img src="profile/SelfPic.JPG" alt="" class="profile-img">
+                <span class="profile-name">Tiffany Pham</span>
+            </div>
+        </div>
+        <!-- Post 4 -->
+        <div class="post-box news">
+            <img src="assets/image-4.jpg" alt="" class="post-img">
+            <h2 class="category">News</h2>
+            <a href="#" class="post-title">Title</a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
+            <div class="profile">
+                <img src="profile/SelfPic.JPG" alt="" class="profile-img">
+                <span class="profile-name">Tiffany Pham</span>
+            </div>
+        </div>
+        <!-- Post 5 -->
+        <div class="post-box car">
+            <img src="assets/image-5.jpg" alt="" class="post-img">
+            <h2 class="category">Car</h2>
+            <a href="#" class="post-title">Title</a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
+            <div class="profile">
+                <img src="profile/SelfPic.JPG" alt="" class="profile-img">
+                <span class="profile-name">Tiffany Pham</span>
+            </div>
+        </div>
+        <!-- Post 6 -->
+        <div class="post-box news">
+            <img src="assets/image-6.jpg" alt="" class="post-img">
+            <h2 class="category">News</h2>
+            <a href="#" class="post-title">Title</a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
+            <div class="profile">
+                <img src="profile/SelfPic.JPG" alt="" class="profile-img">
+                <span class="profile-name">Tiffany Pham</span>
+            </div>
+        </div>
+        <!-- Post 7 -->
+        <div class="post-box car">
+            <img src="assets/image-7.jpg" alt="" class="post-img">
+            <h2 class="category">Car</h2>
+            <a href="#" class="post-title">Title</a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
+            <div class="profile">
+                <img src="profile/SelfPic.JPG" alt="" class="profile-img">
+                <span class="profile-name">Tiffany Pham</span>
+            </div>
+        </div>
+        <!-- Post 1 -->
+        <div class="post-box news">
+            <img src="assets/image-8.jpg" alt="" class="post-img">
+            <h2 class="category">News</h2>
+            <a href="#" class="post-title">Title</a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
+            <div class="profile">
+                <img src="profile/SelfPic.JPG" alt="" class="profile-img">
+                <span class="profile-name">Tiffany Pham</span>
+            </div>
+        </div>
+        <!-- Post 9 -->
+        <div class="post-box food">
+            <img src="assets/image-4.jpg" alt="" class="post-img">
+            <h2 class="category">Food</h2>
+            <a href="#" class="post-title">Title</a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, similique, rerum excepturi harum, vitae facilis corrupti vel modi debitis est perferendis aut quasi ea unde repudiandae iste architecto. Corporis, voluptates.</p>
+            <div class="profile">
+                <img src="profile/SelfPic.JPG" alt="" class="profile-img">
+                <span class="profile-name">Tiffany Pham</span>
+            </div>
+        </div>
+    </div>
 
     <section class="section__container instagram__container">
       <h2 class="section__header">~ INSTAGRAM ~</h2>
@@ -95,9 +226,7 @@
       </div>
     </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="JavaScript/main.js"></script>
-    <script src="JavaScript/lightbox-plus-jquery.js"></script>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="JavaScript/main2.js"></script>
+</body>
 </html>
