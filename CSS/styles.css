@@ -181,7 +181,7 @@ nav {
 }
 
 .portfolio__card:nth-child(2)::after {
-  content: "Animals";
+  content: "Wildlife";
 }
 
 .portfolio__card:nth-child(3)::after {
