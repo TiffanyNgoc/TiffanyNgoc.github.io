@@ -181,11 +181,11 @@ nav {
 }
 
 .portfolio__card:nth-child(2)::after {
-  content: "Wildlife";
+  content: "Portrait";
 }
 
 .portfolio__card:nth-child(3)::after {
-  content: "Landscape";
+  content: "Candid";
 }
 
 .portfolio__content {
