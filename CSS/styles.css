@@ -181,11 +181,11 @@ nav {
 }
 
 .portfolio__card:nth-child(2)::after {
-  content: "Portrait";
+  content: "Portraits";
 }
 
 .portfolio__card:nth-child(3)::after {
-  content: "Candid";
+  content: "Candids";
 }
 
 .portfolio__content {
