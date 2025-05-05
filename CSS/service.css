@@ -51,7 +51,7 @@
   }
   
   .service__package-details h3 {
-    color: rgb(150, 150, 150);
+    color: rgb(50, 50, 50);
   }
   
   .service__package:hover .service__package-details {
